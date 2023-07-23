@@ -87,7 +87,7 @@ void checkButton()
 
 void startSpinning()
 {
-  spinningStopTime = millis() + (random(7, 15) * 1000);
+  spinningStopTime = millis() + random(7000, 15000);
   cooldownStop = spinningStopTime + (COOLDOWN_AFTER_SPINNING * 1000);
   spinningDelay = 100;
   setSpinningModes();
